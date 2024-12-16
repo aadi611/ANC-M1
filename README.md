@@ -4,9 +4,6 @@
 
 Real-time audio denoising system powered by deep learning, implementing a custom UNet architecture for high-quality noise cancellation.
 
-<p align="center">
-  <img src="/api/placeholder/800/400" alt="ANC-M1 Architecture">
-</p>
 
 ## 🌟 Key Features
 
@@ -38,7 +35,7 @@ sf.write("denoised.wav", denoised_audio, 16000)
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ANC-M1.git
+git clone https://github.com/aadi611/ANC-M1.git
 cd ANC-M1
 ```
 
@@ -102,13 +99,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📬 Contact
 
-- **Author**: [Your Name]
-- **Email**: [your.email@example.com]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Author**: [Aadityan Gupta]
+- **Email**: [ag260@snu.edu.in]
+- **LinkedIn**: [https://www.linkedin.com/in/aadityangupta/]
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ANC-M1&type=Date)](https://star-history.com/#yourusername/ANC-M1&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=aadi611/ANC-M1&type=Date)](https://star-history.com/#aadi611/ANC-M1&Date)
 
 ## 🙏 Acknowledgments
 
