@@ -98,10 +98,4 @@ The model uses a UNet architecture optimized for audio processing. Key features:
 4. Push to the branch: `git push origin feature/new-feature`
 5. Submit a pull request
 
-## License
 
-[Add your chosen license here]
-
-## Contact
-
-[Add your contact information here]
