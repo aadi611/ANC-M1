@@ -1,6 +1,9 @@
-torch
-librosa
-soundfile
-numpy
-sounddevice
-scipy
+torch>=1.7.0
+librosa>=0.8.0
+soundfile>=0.10.3
+numpy>=1.19.2
+sounddevice>=0.4.1
+scipy>=1.6.0
+matplotlib>=3.3.3
+tqdm>=4.50.2
+pytest>=6.2.5
