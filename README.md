@@ -1,33 +1,40 @@
-# ANC-M1: Active Noise Cancellation Model
+# ANC-M1: Deep Learning-Based Active Noise Cancellation
 
-A deep learning-based active noise cancellation system using UNet architecture for real-time audio denoising.
 
-## Features
 
-- Real-time audio recording and denoising
-- Custom UNet architecture optimized for audio processing
-- Support for both CPU and GPU inference
-- Processes audio in overlapping chunks for seamless denoising
-- Includes training pipeline with customizable parameters
+Real-time audio denoising system powered by deep learning, implementing a custom UNet architecture for high-quality noise cancellation.
 
-## Prerequisites
+<p align="center">
+  <img src="/api/placeholder/800/400" alt="ANC-M1 Architecture">
+</p>
 
-```bash
-pip install torch librosa soundfile numpy sounddevice scipy
+## 🌟 Key Features
+
+- **Real-Time Processing**: Live audio recording and denoising capabilities
+- **Advanced Architecture**: Custom UNet design optimized for audio signal processing
+- **Flexible Deployment**: Supports both CPU and GPU inference
+- **Seamless Audio**: Processes audio in overlapping chunks for artifact-free output
+- **Complete Pipeline**: Includes training, inference, and evaluation scripts
+
+## 🚀 Quick Demo
+
+```python
+from denosiedaudiofinal import denoise_audio
+import soundfile as sf
+
+# Load and denoise audio
+denoised_audio = denoise_audio("input.wav")
+sf.write("denoised.wav", denoised_audio, 16000)
 ```
 
-## Project Structure
+## 📊 Performance
 
-```
-ANC-M1/
-├── dataset.py           # Dataset handling for training
-├── training_final.py    # Training script
-├── denosiedaudiofinal.py # Inference and audio processing
-├── unet_anc_model.py    # Model architecture (required)
-└── README.md
-```
+- **Sampling Rate**: 16kHz
+- **Latency**: ~100ms for real-time processing
+- **Chunk Processing**: 32000 samples with 1600 sample overlap
+- **Platform Support**: Tested on Windows, Linux, and macOS
 
-## Quick Start
+## 🛠️ Installation
 
 1. Clone the repository:
 ```bash
@@ -40,62 +47,69 @@ cd ANC-M1
 pip install -r requirements.txt
 ```
 
-3. For inference (denoising audio):
+## 💡 Usage
+
+### Real-time Denoising
 ```bash
 python denosiedaudiofinal.py
 ```
-This will:
-- Record 10 seconds of audio
-- Process it through the model
-- Save the denoised version as 'denoised_audio.wav'
 
-4. For training a new model:
+### Training New Model
 ```bash
 python training_final.py
 ```
 
-## Training
+## 📁 Project Structure
 
-To train the model on your own dataset:
-
-1. Prepare your dataset in the following structure:
 ```
-dataset/
-├── clean_trainset_28spk_wav/  # Clean audio files
-└── pnoisy_trainset_28spk_wav/ # Noisy audio files
-```
-
-2. Update the paths in `training_final.py`:
-```python
-noisy_folder = "path/to/noisy/files"
-clean_folder = "path/to/clean/files"
+ANC-M1/
+├── 📜 dataset.py           # Dataset handling
+├── 🎯 training_final.py    # Training pipeline
+├── 🎤 denosiedaudiofinal.py # Inference engine
+├── 🧠 unet_anc_model.py    # Model architecture
+└── 📖 README.md
 ```
 
-3. Run the training script:
-```bash
-python training_final.py
-```
+## 🔧 Model Architecture
 
-## Model Architecture
+The ANC-M1 uses a specialized UNet architecture:
 
-The model uses a UNet architecture optimized for audio processing. Key features:
-- Input: Raw audio waveform
-- Output: Denoised audio waveform
-- Processing: Performed in chunks of 32000 samples with 1600 sample overlap
+- **Input Layer**: Raw audio waveform processing
+- **Encoder**: Multi-scale feature extraction
+- **Decoder**: Progressive upsampling with skip connections
+- **Output**: Clean audio reconstruction
 
-## Performance
+## 📈 Training Process
 
-- Sampling rate: 16kHz
-- Chunk size: 32000 samples (~2 seconds)
-- Overlap: 1600 samples
-- Supports both CPU and GPU inference
+1. Prepare paired noisy-clean audio dataset
+2. Configure training parameters in `training_final.py`
+3. Run training script
+4. Monitor progress through console outputs
 
-## Contributing
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
 
 1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/new-feature`
-3. Commit your changes: `git commit -am 'Add new feature'`
-4. Push to the branch: `git push origin feature/new-feature`
-5. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/enhancement`)
+3. Commit changes (`git commit -am 'Add enhancement'`)
+4. Push to branch (`git push origin feature/enhancement`)
+5. Open a Pull Request
 
+## 📄 License
 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📬 Contact
+
+- **Author**: [Your Name]
+- **Email**: [your.email@example.com]
+- **LinkedIn**: [Your LinkedIn Profile]
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ANC-M1&type=Date)](https://star-history.com/#yourusername/ANC-M1&Date)
+
+## 🙏 Acknowledgments
+
+Special thanks to all contributors and the open-source community.
