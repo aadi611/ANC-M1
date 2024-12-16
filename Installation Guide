@@ -1,0 +1,71 @@
+# Installation Guide
+
+## System Requirements
+
+- Python 3.7 or higher
+- CUDA-capable GPU (optional, for faster processing)
+- 4GB RAM minimum (8GB recommended)
+- Operating System: Windows 10+, Ubuntu 18.04+, or macOS 10.15+
+
+## Step-by-Step Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/ANC-M1.git
+   cd ANC-M1
+   ```
+
+2. **Create a Virtual Environment** (Recommended)
+   ```bash
+   # Using venv
+   python -m venv env
+   
+   # Activate the environment
+   # On Windows
+   .\env\Scripts\activate
+   # On Unix or MacOS
+   source env/bin/activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Verify Installation**
+   ```bash
+   python -c "import torch; print(torch.__version__)"
+   python -c "import librosa; print(librosa.__version__)"
+   ```
+
+## Common Issues and Solutions
+
+### CUDA Installation
+If you want to use GPU acceleration:
+1. Install NVIDIA drivers
+2. Install CUDA Toolkit
+3. Install cuDNN
+
+### Audio Device Setup
+1. Ensure your system recognizes your audio input/output devices
+2. Test recording capabilities:
+   ```python
+   import sounddevice as sd
+   print(sd.query_devices())
+   ```
+
+## Troubleshooting
+
+1. **ImportError: No module named 'torch'**
+   - Ensure you've activated the virtual environment
+   - Reinstall PyTorch: `pip install torch`
+
+2. **RuntimeError: CUDA error**
+   - Check CUDA installation: `nvidia-smi`
+   - Verify PyTorch CUDA availability: 
+     ```python
+     import torch
+     print(torch.cuda.is_available())
+     ```
+
+For additional help, please open an issue on GitHub.
