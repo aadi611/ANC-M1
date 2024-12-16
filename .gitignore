@@ -24,18 +24,50 @@ wheels/
 *.wav
 *.mp3
 *.flac
+*.ogg
+*.m4a
 
 # Model checkpoints
 *.pth
 *.pt
 *.ckpt
+models/
+
+# Virtual Environment
+venv/
+env/
+ENV/
 
 # IDE specific files
 .idea/
 .vscode/
 *.swp
 *.swo
+.project
+.pydevproject
+.settings/
 
 # OS specific
 .DS_Store
 Thumbs.db
+*.db
+Desktop.ini
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Distribution / packaging
+.Python
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
