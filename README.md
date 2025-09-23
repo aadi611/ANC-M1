@@ -2,8 +2,7 @@
 
 
 
-Real-time audio denoising system powered by deep learning, implementing a custom UNet architecture for high-quality noise cancellation.
-
+A real-time audio denoising system utilizing deep learning, featuring a custom UNet architecture designed for high-quality noise reduction.
 
 ## 🌟 Key Features
 
