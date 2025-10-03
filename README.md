@@ -79,7 +79,7 @@ The ANC-M1 uses a specialized UNet architecture:
 
 1. Prepare paired noisy-clean audio dataset
 2. Configure training parameters in `training_final.py`
-3. Run training script
+3. Run training module
 4. Monitor progress through console outputs
 
 ## 🤝 Contributing
