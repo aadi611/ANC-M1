@@ -2,7 +2,7 @@
 
 
 
-A real-time audio denoising system utilizing deep learning, featuring a custom UNet architecture designed for high-quality noise reduction.
+A real-time audio denoising system utilizing deep learning, featuring a custom UNet architecture designed for high-quality noise reduction
 
 ## 🌟 Key Features
 
