@@ -3,7 +3,7 @@ from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 from model import UNetANC
 from dataset import AudioDataset
-import os
+
 
 DATASET_PATHS = {
     'clean_testset': r"C:\mp train\dataset\clean_testset_final",
