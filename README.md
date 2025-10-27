@@ -26,7 +26,7 @@ sf.write("denoised.wav", denoised_audio, 16000)
 ## 📊 Performance
 
 - **Sampling Rate**: 16kHz
-- **Latency**: ~100ms for real-time processing
+- **Latency**: 100ms for real-time processing
 - **Chunk Processing**: 32000 samples with 1600 sample overlap
 - **Platform Support**: Tested on Windows, Linux, and macOS
 
