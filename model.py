@@ -1,5 +1,5 @@
 
-
+import torch 
 import torch.nn as nn
 
 class DoubleConv(nn.Module):
@@ -52,3 +52,4 @@ class UNetANC(nn.Module):
         x = self.dec1(x)
 
         return torch.tanh(x)
+
