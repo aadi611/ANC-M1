@@ -1,4 +1,5 @@
-import torch
+
+
 import torch.nn as nn
 
 class DoubleConv(nn.Module):
@@ -49,4 +50,5 @@ class UNetANC(nn.Module):
         x = self.dec2(torch.cat([self.upsample(x), x2], dim=1))
         x = self.upsample(x)
         x = self.dec1(x)
+
         return torch.tanh(x)
