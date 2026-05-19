@@ -21,7 +21,7 @@
 - **🧠 Advanced Architecture**: Custom UNet design optimized for 1D audio signal processing
 - **⚡ Flexible Deployment**: Supports both CPU and GPU inference with automatic device detection
 - **🔊 Seamless Audio**: Processes audio in overlapping chunks for artifact-free output
-- **📊 Complete Pipeline**: Includes training, inference, evaluation, and visualization scripts
+- **📊 Complete Pipeline**: Includes training, inference, evaluation, and visualization script
 - **🎨 Modern Web Interface**: Beautiful, responsive frontend for easy interaction
 - **📈 Training Monitoring**: Real-time loss tracking with early stopping and learning rate scheduling
 
