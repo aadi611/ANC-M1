@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 from typing import Tuple, Optional
 from model import UNetANC
+from datetime import time
 
 def record_audio(filename: str = "recorded_noisy.wav", duration: int = 15, sr: int = 16000) -> None:
     """Record audio from microphone and save to file."""
