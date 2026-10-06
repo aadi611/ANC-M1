@@ -1,4 +1,3 @@
-```python
 import torch
 import librosa
 import librosa.display
