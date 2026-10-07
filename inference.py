@@ -4,7 +4,7 @@ import librosa.display
 import soundfile as sf
 import numpy as np
 import sounddevice as sd
-import matplotlib.pyplot as plt
+
 
 from pathlib import Path
 from typing import Optional, Tuple
